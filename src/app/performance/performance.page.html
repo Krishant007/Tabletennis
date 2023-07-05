@@ -1,0 +1,74 @@
+<ion-content>
+  <div class="header" style="display: flex; justify-content: space-between; align-items: center; padding-left: 7px; padding-right: 7px;">
+    <h3 style="margin-right: 10px;">Fiji Table Tennis</h3>
+    <div style="display: flex; align-items: center;">
+      <button style="margin-right: 5px; background-color: #6B7775; font-size: 35px; padding: 5px;"><ion-icon name="search-outline" ></ion-icon></button>
+      <button style="background-color: #6B7775; font-size: 35px; padding: 5px;"><ion-icon name="notifications-outline" [routerLink]="['/notification']"></ion-icon></button>
+      <button style="background-color: #D9D9D9; color: black; width: 35px; height: 35px; border-radius: 50%; border: none; outline: none; display: flex; justify-content: center; align-items: center;" class="circle-button" [routerLink]="['/user']">
+        <h5 style="margin: 0;">K</h5>
+      </button>
+    </div>
+  </div>
+
+  <hr style="height: 1px; background-color: #C260FE;">
+
+  <div class="title" style="text-align: center; margin-top: 20px;">
+    <h1 style="background-image: linear-gradient(to bottom, #C260FE, white);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                font-size: 50px;">Performance</h1>
+  </div>
+
+  <div class="picture" style="height: 60%; width: 80%; display: flex; align-items: center; justify-content: center; margin-left: 10%; margin-top: -35%;">
+    <div style="border-radius: 10px; overflow: hidden;">
+      <img src="assets/graph.jpg" style="display: block; max-width: 100%; height: auto;">
+    </div>
+  </div>
+  
+
+  <div class="textt" style="text-align: center; margin: -40%; ">
+    <h1 style="background-image: linear-gradient(to bottom, #C260FE, white);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                font-size: 40px;">Performance Report</h1>
+  </div>  
+
+  <div class="info" style="padding-left: 3%; margin-top: 50%;">
+    <h4 style="-webkit-text-fill-color: white;">Player ID: 562334 </h4>
+    <h4 style="-webkit-text-fill-color: white;">Name: John Whick </h4>
+    <h4 style="-webkit-text-fill-color: white;">Date of Birth: 12/05/01 </h4>
+    <h4 style="-webkit-text-fill-color: white;">Height: 140CM </h4>
+    <h4 style="-webkit-text-fill-color: white;">Weight: 60KG </h4>
+    <h4 style="-webkit-text-fill-color: white;">Matches Played: 15 </h4>
+    <h4 style="-webkit-text-fill-color: white;">Wins: 10 </h4>
+
+  </div>
+
+  <div class="button" style="text-align: right; margin-right: 20px;">
+    <button style="text-align: center; height: 46px; width: 156px; border-radius: 50px;
+                    background-image: linear-gradient(to top, #C260FE,#C260FE);
+                    border: none; color: white;" >
+      <h3 style="margin: 0;">Print</h3>
+    </button>
+</div>
+</ion-content>
+
+<footer style="display: flex; justify-content: space-between; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775); border: none;">
+  <button style="display: flex; align-items: center; justify-content: center; flex: 1; border: none; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775);" [routerLink]="['/dashboard']">
+    <ion-icon name="home-outline" style="font-size: 35px; color: white;"></ion-icon>
+  </button>
+
+  <button style="display: flex; align-items: center; justify-content: center; flex: 1; border: none; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775);" [routerLink]="['/addplayer']">
+    <ion-icon name="add-circle-outline" style="font-size: 35px; color: white;"></ion-icon>
+  </button>
+
+  <button style="display: flex; align-items: center; justify-content: center; flex: 1; border: none; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775);" [routerLink]="['/profile']">
+    <ion-icon name="arrow-back-outline" style="font-size: 35px; color: white;"></ion-icon>
+  </button>
+</footer>

@@ -1,0 +1,7 @@
+{
+  "name": "Tabletennis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

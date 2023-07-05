@@ -1,0 +1,38 @@
+
+<ion-content >
+  <div class="back" style="display: flex; justify-content: space-between; padding-left: 15px;">
+    <button style="background-color: #6B7775; margin-top: 10%; -webkit-text-fill-color: white; display: flex; align-items: center;" [routerLink]="['/account']">
+      <ion-icon name="chevron-back-outline" style="color: white; margin-right: 5px;"></ion-icon>
+      <h3 style="color: white; margin: 0;">Back</h3>
+    </button>
+    </div>
+
+  <div class="image" style="display: flex; justify-content: center; align-items: center;">
+    <ion-img src="assets/result-3.png" style="width: 310px; height: 333px;"></ion-img>
+  </div>
+  <div class="text" style="text-align: center; -webkit-text-fill-color: white;">
+    <h2>CREATE AN ACCOUNT</h2>
+  </div>
+
+  <div class="info" style="padding-left: 5px;">
+    <ion-input style="-webkit-text-fill-color: white;" label="User Name:"  ></ion-input>
+    <ion-input style="-webkit-text-fill-color: white;" label="Date of Birth:"  ></ion-input>
+    <ion-input style="-webkit-text-fill-color: white;" label="Email:"  ></ion-input>
+    <ion-input style="-webkit-text-fill-color: white;" type="Password" label="Password:"  ></ion-input>
+    <ion-input style="-webkit-text-fill-color: white;" type="Password" label="Confirm Password:"  ></ion-input>
+
+
+  </div>
+
+  <div class="account" style="text-align: center; margin-top: 20%;">
+    <h6 style="-webkit-text-fill-color: white;">Already registered? <button style="background-color: #6B7775; -webkit-text-fill-color: #C260FE; font-size: medium;" [routerLink]="['/login']">LogIn</button></h6>
+  </div>
+
+  </ion-content>
+  
+  <button style="display: block; text-align: center; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775); border: none;" [routerLink]="['/details']">
+    <h1 style="color: white;">Register</h1>
+  </button>
+  
+  
+  

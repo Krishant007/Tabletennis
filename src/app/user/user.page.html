@@ -1,0 +1,79 @@
+
+<ion-content >
+
+   
+  <div class="header" style="display: flex; justify-content: space-between; align-items: center; padding-left: 7px; padding-right: 7px;">
+    <h3 style="margin-right: 10px;">Fiji Table Tennis</h3>
+    <div style="display: flex; align-items: center;">
+      <button style="margin-right: 5px; background-color: #6B7775; font-size: 35px; padding: 5px;"><ion-icon name="search-outline" ></ion-icon></button>
+      <button style="background-color: #6B7775; font-size: 35px; padding: 5px;"><ion-icon name="notifications-outline" [routerLink]="['/notification']"></ion-icon></button>
+      <button style="background-color: #D9D9D9; color: black; width: 35px; height: 35px; border-radius: 50%; border: none; outline: none; display: flex; justify-content: center; align-items: center;" class="circle-button" [routerLink]="['/user']">
+        <h5 style="margin: 0;">K</h5>
+      </button>
+    </div>
+  </div>
+
+  <hr style="height: 1px; background-color: #C260FE;">
+
+  <div class="title" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+    <h1 style="background-image: linear-gradient(to bottom, #C260FE, white);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                font-size: 50px; margin-right: 10px;">User Profile</h1>
+   
+  </div>
+  
+
+  <div class="picture" style="height: 300px; width: 300px; display: flex; margin: auto; position: relative;">
+    <div style="border-radius: 20px; overflow: hidden;">
+      <div style="border-radius: 20px; overflow: hidden;">
+        <ion-img src="assets/user.jpg"></ion-img>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="info" style="padding-left: 3%; margin-top: -18%;">
+    <h4 style="-webkit-text-fill-color: white;">Player ID: 284743 </h4>
+    <h4 style="-webkit-text-fill-color: white;">Name: Krishant </h4>
+    <h4 style="-webkit-text-fill-color: white;">Date of Birth: 15/01/2002 </h4>
+    <h4 style="-webkit-text-fill-color: white;">Height: 159CM </h4>
+    <h4 style="-webkit-text-fill-color: white;">Weight: 65KG </h4>
+    <h4 style="-webkit-text-fill-color: white;">Matches Played: 50 </h4>
+    <h4 style="-webkit-text-fill-color: white;">Wins: 40 </h4>
+
+  </div>
+
+  <div style="display: flex; justify-content: flex-end;">
+    <button style="background-color: #6B7775; padding: 10px;" [routerLink]="['/editprofile']">
+      <ion-icon name="create-outline" style="font-size: 35px; color: white;"></ion-icon>
+    </button>
+  
+    <button style="background-color: #6B7775; margin-right: 10px;" [routerLink]="['/home']">
+      <ion-icon name="exit-outline" style="font-size: 35px; color: white;"></ion-icon>
+    </button>
+  </div>
+  
+  
+  
+
+</ion-content>
+
+<footer style="display: flex; justify-content: space-between; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775); border: none;">
+  <button style="display: flex; align-items: center; justify-content: center; flex: 1; border: none; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775);" [routerLink]="['/dashboard']">
+    <ion-icon name="home-outline" style="font-size: 35px; color: white;"></ion-icon>
+  </button>
+
+  <button style="display: flex; align-items: center; justify-content: center; flex: 1; border: none; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775);" [routerLink]="['/addplayer']">
+    <ion-icon name="add-circle-outline" style="font-size: 35px; color: white;"></ion-icon>
+  </button>
+
+  <button style="display: flex; align-items: center; justify-content: center; flex: 1; border: none; background-color: #C260FE; background-image: linear-gradient(to top, #C260FE, #6B7775);" [routerLink]="['/dashboard']">
+    <ion-icon name="arrow-back-outline" style="font-size: 35px; color: white;"></ion-icon>
+  </button>
+</footer>
