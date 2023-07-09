@@ -1,3 +1,4 @@
+
 <ion-content style="margin: 3px;">
   
   <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
@@ -27,7 +28,7 @@
 
   <ion-card style="background-color: #6B7775;">
     <ion-card-content>
-      <h1 style="text-align: center; -webkit-text-fill-color: white;">Winner</h1>
+      <h1 style="text-align: center; -webkit-text-fill-color: white;">Players</h1>
 
       <div class="player-details">
         <ion-item>
@@ -49,19 +50,14 @@
           <ion-label position="floating">Name</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
-        
-        <ion-item>
-          <ion-label position="floating">Score</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
       </div>
-      <h1 style="text-align: center; -webkit-text-fill-color: white;">Losser</h1>
+      <h1 style="text-align: center; -webkit-text-fill-color: white;">Partner</h1>
       
       <div class="vertical-line"></div>
       
       <div class="player-details">
         <ion-item>
-          <ion-label position="floating">Player 1 ID</ion-label>
+          <ion-label position="floating">Player 1 partner ID</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
         
@@ -71,7 +67,7 @@
         </ion-item>
 
         <ion-item>
-          <ion-label position="floating">Player 2 ID</ion-label>
+          <ion-label position="floating">Player 2 partner ID</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
         
@@ -79,20 +75,43 @@
           <ion-label position="floating">Name</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
-        
+      </div>
+
+      <h1 style="text-align: center; -webkit-text-fill-color: white;">Match Results</h1>
+      <div class="scores">
+
         <ion-item>
-          <ion-label position="floating">Score</ion-label>
+          <ion-label position="floating">Team 1 Score </ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Team 2 Score </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="button" style="text-align: left; margin-left: 20px; padding-top: 2%;">
+          <button style="text-align: center; height: 46px; width: 156px; border-radius: 50px;
+                          background-image: linear-gradient(to top, #C260FE, #C260FE);
+                          border: none; color: white;" [routerLink]="['/dashboard']">
+            <h3 style="margin: 0;">Delete Match</h3>
+          </button>
+        </div>
+      
+        <div class="button" style="text-align: right; margin-right: 20px; padding-top: 2%;">
+          <button style="text-align: center; height: 46px; width: 156px; border-radius: 50px;
+                          background-image: linear-gradient(to top, #C260FE, #C260FE);
+                          border: none; color: white;" [routerLink]="['/dashboard']">
+            <h3 style="margin: 0;">Submit</h3>
+          </button>
+        </div>
       </div>
       
-      <div class="button" style="text-align: right; margin-right: 20px; padding-top: 2%;">
-        <button style="text-align: center; height: 46px; width: 156px; border-radius: 50px;
-                        background-image: linear-gradient(to top, #C260FE,#C260FE);
-                        border: none; color: white;" [routerLink]="['/dashboard']" >
-          <h3 style="margin: 0;">Submit</h3>
-        </button>
-    </div>
+
+    
     </ion-card-content>
   </ion-card>
   
